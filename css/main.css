@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: rgb(255, 109, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(100, 0, 100);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: purple;
+}
+.navbar nav {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0%;
+  top: 0;
+  height: 100vh;
+  padding: 1em;
+  background: rgb(128, 0, 128);
+  color: white !important;
+}
+.navbar nav ul.primary-nav {
+  margin-top: 5em;
+}
+.navbar nav li a {
+  color: white;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+.navbar nav li a:hover {
+  font-weight: bold;
+}
+.navbar nav .mobile-menu-exit {
+  float: right;
+  margin: 2em;
+  cursor: pointer;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menu {
+  cursor: pointer;
+  margin-right: 2em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+section {
+  padding: 1em;
+}
+
+.hero-img {
+  background-image: url(../images/hero_banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background-color: purple;
+  background-blend-mode: soft-light;
+}
+.hero-img .hero_text {
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-img .hero_text h1 {
+  font-size: 1.5em;
+  letter-spacing: -0.5px;
+}
+.hero-img .hero_text address {
+  font-size: 0.75em;
+}
+.hero-img .hero-cta-buttons {
+  text-align: center;
+  width: 75%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-img .hero-cta-buttons .new-here-cta {
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  padding: 0.9em;
+  margin: auto;
+  margin-bottom: 1.3em;
+}
+.hero-img .hero-cta-buttons .new-here-cta:hover {
+  background-color: rgb(100, 0, 100);
+}
+.hero-img .hero-cta-buttons .new-here-cta:hover a:hover {
+  color: white;
+}
+.hero-img .live-stream-cta {
+  background-color: rgb(100, 0, 100);
+  width: 40%;
+  margin: auto;
+  padding: 0.9em;
+}
+.hero-img .live-stream-cta:hover {
+  background-color: white;
+}
+.hero-img .live-stream-cta:hover a:hover {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+li {
+  list-style: none;
+}
+
+.services {
+  padding: 1em;
+  margin: 1em;
+}
+.services .col-left {
+  margin: 2em;
+  text-align: center;
+}
+.services .col-left .sunday-services {
+  border: 1px solid white;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 1em;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+}
+.services .col-left span {
+  color: rgb(255, 174, 0);
+}
+.services .col-left .visit-cta {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  letter-spacing: -0.6px;
+}
+.services .col-left .visit-cta a:hover {
+  color: rgb(255, 174, 0);
+}
+.services .col-right {
+  text-align: center;
+}
+.services .col-right .about-us {
+  border: 1px solid white;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 1em;
+  font-weight: bold;
+  letter-spacing: -0.6px;
+}
+.services .learn-more-cta {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  letter-spacing: -0.6px;
+}
+.services .learn-more-cta a:hover {
+  color: rgb(255, 174, 0);
+}
+
+section.some_projects .effect {
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+section.some_projects .effect1 {
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@-webkit-keyframes slideout {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes slideout {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+.programs {
+  pointer-events: none;
+  padding: 1em;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  transition-delay: 5s;
+}
+
+.countdowndate {
+  height: auto;
+  text-align: center;
+  padding: 1em;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.countdowndate .up-event {
+  color: red;
+}
+.countdowndate #demo {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(128, 110, 13);
+}
+
+section.mission_vision {
+  text-align: center;
+}
+section.mission_vision .mission {
+  letter-spacing: 3px;
+  margin-bottom: 1em;
+}
+section.mission_vision .mission_text {
+  font-size: 1em;
+  letter-spacing: -0.5px;
+  margin-bottom: 1em;
+  color: rgb(255, 174, 0);
+}
+section.mission_vision .mission-details {
+  margin-bottom: 1em;
+  font-size: 0.8em;
+}
+section.mission_vision .learn_more_cta {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  letter-spacing: -0.6px;
+}
+section.mission_vision .learn_more_cta a:hover {
+  color: rgb(255, 174, 0);
+}
+
+section.bottom-navbar {
+  width: 80%;
+  margin: auto;
+  background: rgb(255, 174, 0);
+  color: rgb(100, 0, 100);
+}
+section.bottom-navbar nav {
+  text-align: center;
+}
+section.bottom-navbar nav .nav-margin {
+  margin-bottom: 1em;
+}
+section.bottom-navbar nav .nav-margin .clicked {
+  font-weight: bold;
+}
+section.bottom-navbar a {
+  color: black;
+  font-size: 1em;
+}
+section.bottom-navbar .bottom-navbar-contact {
+  text-align: center;
+}
+section.bottom-navbar .bottom-navbar-contact input {
+  width: 90%;
+  height: 50px;
+  margin: 0.3em;
+  border: none;
+}
+section.bottom-navbar .bottom-navbar-contact button {
+  width: 90%;
+  height: 50px;
+  margin: 0.1em;
+  border: none;
+  color: white;
+  background-color: rgb(100, 0, 100);
+}
+section.bottom-navbar .bottom-navbar-contact button:hover {
+  background-color: rgb(230, 22, 230);
+  color: black;
+}
+section.bottom-navbar .bottom-navbar-contact textarea {
+  border: none;
+  width: 90%;
+}
+section.bottom-navbar .bottom-navbar-social-media-cta {
+  margin: auto;
+  width: 30%;
+}
+
+.col-right-1 {
+  width: 100%;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 2em;
+}
+
+.lesson {
+  max-width: 1300px;
+  display: flex;
+  height: auto;
+  padding: 50px;
+}
+.lesson .main-lesson {
+  flex: 2;
+  padding: 2em;
+  order: 4;
+}
+.lesson .main-lesson1 {
+  flex: 1;
+  padding: 2em;
+  order: 3;
+}
+.lesson .main-lesson2 {
+  flex: 1;
+  padding: 2em;
+  order: 1;
+}
+.lesson .main-lesson3 {
+  flex: 1;
+  padding: 2em;
+  order: 2;
+}
+
+section.pastors {
+  text-align: center;
+}
+section.pastors .container .img {
+  width: 50%;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/*.open {
+  font-size: 3em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: auto;
+}*/
+
+/*@media only screen and (min-width: 768px) {
+  section {
+    display: none;
+  }
+  div {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .open {
+    display: none;
+  }*/
+}/*# sourceMappingURL=main.css.map */
