@@ -78,7 +78,7 @@ section {
 }
 
 .hero-img {
-  background-image: url(../images/banner_img.jpg);
+  background-image: url(../images/banner_img-min.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
