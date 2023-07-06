@@ -1,6 +1,6 @@
-    <script>
+
         // Set the date we're counting down to
-        var countDownDate = new Date("July 3, 2023 15:37:25").getTime();
+        var countDownDate = new Date("July 7, 2023 15:37:25").getTime();
         
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -28,9 +28,8 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
           }
         }, 1000);
-        </script>
 
-        <script>
+
             function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -48,8 +47,7 @@
 }
 
 window.addEventListener("scroll", reveal);
-            </script>
-            <script>
+
                 const mobileBtn = document.getElementById('mobile-cta')
                 nav = document.querySelector('nav')
                 mobileBtnExit = document.getElementById('mobile-exit');
@@ -60,4 +58,3 @@ window.addEventListener("scroll", reveal);
                 mobileBtnExit.addEventListener('click', ( ) => {
                     nav.classList.remove('menu-btn');
                 })
-            </script>

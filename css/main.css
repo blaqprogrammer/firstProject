@@ -1,12 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: rgb(255, 109, 255);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 body {
   background: rgb(100, 0, 100);
@@ -76,10 +78,10 @@ section {
 }
 
 .hero-img {
-  background-image: url(../images/hero_banner.jpg);
+  background-image: url(../images/banner_img.jpg);
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 100vh;
   margin: 0;
   position: relative;
   text-align: center;
@@ -147,7 +149,14 @@ li {
 .services {
   padding: 1em;
   margin: 1em;
+
 }
+/* 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 .services .col-left {
   margin: 2em;
   text-align: center;
