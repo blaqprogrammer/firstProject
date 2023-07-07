@@ -5,6 +5,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root {
   --primary-color: rgb(255, 109, 255);
 }
@@ -88,6 +89,18 @@ section {
   background-color: purple;
   background-blend-mode: soft-light;
 }
+
+.hero-cta-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.hero-cta-buttons-left, .hero-cta-buttons-right{
+  padding: auto;
+  width: 100%;
+}
 .hero-img .hero_text {
   text-align: center;
   width: 80%;
@@ -111,7 +124,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.hero-img .hero-cta-buttons .new-here-cta {
+.hero-img .new-here-cta {
   background-color: rgb(255, 255, 255);
   width: 40%;
   padding: 0.9em;
